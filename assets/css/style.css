@@ -23,15 +23,17 @@ body {
 }
 
 .header .links a {
-  margin: 0, 1em;
+  margin: 0 .3em;
 }
 
 a, a:visited {
   color: #4E2A8E;
+  text-decoration: none;
 }
 
 a:hover {
   color: #555;
+  text-decoration: underline;
 }
 
 h3 {
