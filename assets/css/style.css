@@ -1,0 +1,75 @@
+body {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 18px;
+}
+
+.header {
+  margin-top: 1.5em;
+}
+
+.header .title h1 {
+  font-family: 'Rock Salt', cursive;
+  font-size: 1.75em;
+  color: #4E2A8E;
+  margin-bottom: 0;
+}
+
+.header .title h2 {
+  color: #555;
+}
+
+.header .links {
+  text-align: center;
+}
+
+.header .links a {
+  margin: 0, 1em;
+}
+
+a, a:visited {
+  color: #4E2A8E;
+}
+
+a:hover {
+  color: #555;
+}
+
+h3 {
+  color: #4E2A8E;
+}
+
+.pull-right {
+  text-align: right;
+}
+
+.sidebar-item p {
+  font-size: smaller;
+}
+
+.index-nav a {
+  background: #4f2a8e;
+  background-image: -webkit-linear-gradient(top, #4f2a8e, #8566bd);
+  background-image: -moz-linear-gradient(top, #4f2a8e, #8566bd);
+  background-image: -ms-linear-gradient(top, #4f2a8e, #8566bd);
+  background-image: -o-linear-gradient(top, #4f2a8e, #8566bd);
+  background-image: linear-gradient(to bottom, #4f2a8e, #8566bd);
+  -webkit-border-radius: 8;
+  -moz-border-radius: 8;
+  border-radius: 8px;
+  text-shadow: 1px 1px 3px #555;
+  -webkit-box-shadow: 1px 1px 3px #555;
+  -moz-box-shadow: 1px 1px 3px #555;
+  box-shadow: 1px 1px 3px #555;
+  color: #ffffff;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.index-nav a:hover {
+  background: #4f2a8e;
+  text-decoration: none;
+}
+
+.index-nav {
+  margin-top: 2.5em;
+}
