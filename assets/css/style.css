@@ -1,6 +1,8 @@
 body {
   font-family: 'Ubuntu', sans-serif;
   font-size: 18px;
+  background: black;
+  color: white;
 }
 
 .header {
@@ -12,10 +14,6 @@ body {
   font-size: 1.75em;
   color: #4E2A8E;
   margin-bottom: 0;
-}
-
-.header .title h2 {
-  color: #555;
 }
 
 .header .links {
@@ -74,4 +72,25 @@ h3 {
 
 .index-nav {
   margin-top: 2.5em;
+}
+
+blockquote {
+  padding-left: 1em;
+  border-left: 4px solid #4f2a8e;
+  color: #555;
+}
+
+#post h2 {
+  font-size: 1.3em;
+  color: #4f2a8e;
+}
+
+#post h3 {
+  color: #4f2a8e;
+}
+
+.footer {
+  color: white;
+  background: #111;
+  padding: 3em 0;
 }

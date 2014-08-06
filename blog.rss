@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+  <title>Elixir Quiz</title>
+  <link>http://elixirquiz.github.io</link>
+  <description>Weekly programming problems to help you learn Elixir</description>
+  <lastBuildDate>2014-08-06 08:55:59</lastBuildDate>
+  <language>en-us</language>
+<item>
+  <title>FizzBuzz</title>
+  <description>[CDATA[ For our first problem, we tackle the classic interview question: FizzBuzz. ]]</description>
+  <pubDate>2014-08-11</pubDate>
+  <link>http://elixirquiz.github.io/2014-08-11-fizzbuzz.html</link>
+  <guid>http://elixirquiz.github.io/2014-08-11-fizzbuzz.html</guid>
+</item>
+</channel>
+</rss>
