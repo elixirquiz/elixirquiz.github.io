@@ -1,8 +1,8 @@
 body {
   font-family: 'Ubuntu', sans-serif;
   font-size: 18px;
-  background: black;
-  color: white;
+  background: #111;
+  color: #ddd;
 }
 
 .header {
@@ -25,12 +25,12 @@ body {
 }
 
 a, a:visited {
-  color: #4E2A8E;
-  text-decoration: none;
+  color: #4e2a8e;
+  text-decoration: underline;
 }
 
 a:hover {
-  color: #da1;
+  color: #f2eeb3;
   text-decoration: underline;
 }
 
@@ -47,12 +47,12 @@ h3 {
 }
 
 .index-nav a {
-  background: #4f2a8e;
-  background-image: -webkit-linear-gradient(top, #4f2a8e, #8566bd);
-  background-image: -moz-linear-gradient(top, #4f2a8e, #8566bd);
-  background-image: -ms-linear-gradient(top, #4f2a8e, #8566bd);
-  background-image: -o-linear-gradient(top, #4f2a8e, #8566bd);
-  background-image: linear-gradient(to bottom, #4f2a8e, #8566bd);
+  background: #4E2A8E;
+  background-image: -webkit-linear-gradient(top, #4E2A8E, #59323c);
+  background-image: -moz-linear-gradient(top, #4E2A8E, #59323c);
+  background-image: -ms-linear-gradient(top, #4E2A8E, #59323c);
+  background-image: -o-linear-gradient(top, #4E2A8E, #59323c);
+  background-image: linear-gradient(to bottom, #4E2A8E, #59323c);
   -webkit-border-radius: 8;
   -moz-border-radius: 8;
   border-radius: 8px;
@@ -66,7 +66,7 @@ h3 {
 }
 
 .index-nav a:hover {
-  background: #4f2a8e;
+  background: #4E2A8E;
   text-decoration: none;
 }
 
@@ -76,21 +76,22 @@ h3 {
 
 blockquote {
   padding-left: 1em;
-  border-left: 4px solid #4f2a8e;
-  color: #555;
+  border-left: 4px solid #4E2A8E;
+  color: #333;
+  color: #f2eeb3;
 }
 
 #post h2 {
   font-size: 1.3em;
-  color: #4f2a8e;
+  color: #4E2A8E;
 }
 
 #post h3 {
-  color: #4f2a8e;
+  color: #4E2A8E;
 }
 
 .footer {
-  color: white;
-  background: #111;
+  color: #eee;
   padding: 3em 0;
+  background: #000;
 }
