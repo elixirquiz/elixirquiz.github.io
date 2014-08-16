@@ -95,3 +95,9 @@ blockquote {
   padding: 3em 0;
   background: #000;
 }
+
+code.inline {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 1em;
+  color: #f2eeb3;
+}

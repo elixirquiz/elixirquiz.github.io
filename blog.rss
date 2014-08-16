@@ -4,8 +4,15 @@
   <title>Elixir Quiz</title>
   <link>http://elixirquiz.github.io</link>
   <description>Weekly programming problems to help you learn Elixir</description>
-  <lastBuildDate>2014-08-11 08:17:13</lastBuildDate>
+  <lastBuildDate>2014-08-16 06:17:11</lastBuildDate>
   <language>en-us</language>
+<item>
+  <title>Run Length Encoding</title>
+  <description>[CDATA[ A programming challenge in which we take strings of uppercase characters, and return a version that has been compressed with the Run Length Encoding algorithm ]]</description>
+  <pubDate>2014-08-16</pubDate>
+  <link>http://elixirquiz.github.io/2014-08-16-run-length-encoding.html</link>
+  <guid>http://elixirquiz.github.io/2014-08-16-run-length-encoding.html</guid>
+</item>
 <item>
   <title>FizzBuzz</title>
   <description>[CDATA[ For our first problem, we tackle the classic interview question: FizzBuzz. ]]</description>
