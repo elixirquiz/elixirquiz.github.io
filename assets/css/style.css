@@ -1,8 +1,8 @@
 body {
   font-family: 'Ubuntu', sans-serif;
   font-size: 18px;
-  background: #111;
-  color: #ddd;
+  background: #eeeee2;
+  color: #1a1a1a;
 }
 
 .header {
@@ -26,11 +26,11 @@ body {
 
 a, a:visited {
   color: #4e2a8e;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 a:hover {
-  color: #f2eeb3;
+  color: #4a3966;
   text-decoration: underline;
 }
 
@@ -78,7 +78,7 @@ blockquote {
   padding-left: 1em;
   border-left: 4px solid #4E2A8E;
   color: #333;
-  color: #f2eeb3;
+  color: #4a3966;
 }
 
 #post h2 {
@@ -96,8 +96,9 @@ blockquote {
   background: #000;
 }
 
-code.inline {
-  font-family: 'Share Tech Mono', monospace;
+code, code.inline {
+  font-family: 'Share Tech Mono', monospace !important;
   font-size: 1em;
-  color: #f2eeb3;
+  color: #4a3966;
 }
+

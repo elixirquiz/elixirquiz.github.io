@@ -52,7 +52,66 @@
 <p>For larger solutions, please host your code elsewhere and link to it.</p>
 <p><a href="https://gist.github.com">GitHub gists</a> can be useful for hosting your solutions, but anywhere is fine.</p>
 <h3>Example solutions</h3>
-<p>After the quiz period ends on August 15th, I will update this section and talk about some interesting solutions that were posted to <a href="http://reddit.com/r/elixirquiz">our subreddit</a></p>
+<p>We got 3 solutions for this problem. </p>
+<ul>
+<li><a href="http://www.reddit.com/r/elixirquiz/comments/2d18d1/20140809_fizzbuzz/cjlj8q7">im_pragdave</a>
+</li>
+<li><a href="https://gist.github.com/behe/4dd260a65e81132a3d90">@jlind</a>
+</li>
+<li><a href="https://gist.github.com/BennyHallett/00ea5440efb7d35a4b18">@bennyhallett</a>
+</li>
+</ul>
+<p>Two of the solutions involved pattern matching; Defining a function with 4 separate guard clauses to determine what string should be returned when a number is divisible by 15, 5, 3, or none of those.</p>
+<pre><code>
+def transform(value) when rem(value, 15) == 0, do: &quot;FizzBuzz&quot;
+def transform(value) when rem(value, 3) == 0, do: &quot;Fizz&quot;
+def transform(value) when rem(value, 5) == 0, do: &quot;Buzz&quot;
+def transform(value), do: value
+
+</code></pre>
+<p>With the <code class="inline">transform/1</code> function defined, both solutions took a range of numbers and mapped it to this function.</p>
+<pre><code>
+def up_to(n) do
+  1..n
+  |&gt; Enum.to_list
+  |&gt; Enum.map(&amp;transform/1)
+  |&gt; Enum.join &quot; &quot;
+end
+
+</code></pre>
+<p>The other solution took a different approach, using two cycling Streams, zipping them, and transforming the result into the correct value using <code class="inline">Stream.with_index/1</code>.</p>
+<pre><code>
+defmodule FizzBuzz do
+
+  @doc &quot;&quot;&quot;
+  Print the FizzBuzz sequence from 1 to `n`
+
+  ## Example
+
+      iex&gt; FixxBuzz.up_to 20
+      1 2 Fizz 4 Buzz Fizz 7 8 Fizz Buzz 11 Fizz 13 14 Fizz Buzz 16 17 Fizz 19 Buzz
+  &quot;&quot;&quot;
+
+  def up_to(n) do
+    fizzbuzz_stream |&gt; Enum.take(n) |&gt; Enum.join |&gt; IO.puts
+  end
+
+  @doc &quot;&quot;&quot;
+  Return a stream of FizzBuzz values
+  &quot;&quot;&quot;
+  def fizzbuzz_stream do
+    threes = Stream.cycle [ nil, nil, &quot;Fizz &quot; ]
+    fives  = Stream.cycle [ nil, nil, nil, nil, &quot;Buzz &quot; ]
+    Stream.zip(threes, fives) |&gt; Stream.with_index |&gt; Stream.map(&amp;speak/1)
+  end
+
+  defp speak({{nil,  nil},  n}), do: &quot;#{n+1} &quot;
+  defp speak({{fizz, buzz}, _}), do: &quot;#{fizz}#{buzz}&quot;
+
+end
+
+
+</code></pre>
 
 </div>
 
