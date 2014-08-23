@@ -4,8 +4,15 @@
   <title>Elixir Quiz</title>
   <link>http://elixirquiz.github.io</link>
   <description>Weekly programming problems to help you learn Elixir</description>
-  <lastBuildDate>2014-08-20 08:20:32</lastBuildDate>
+  <lastBuildDate>2014-08-23 02:24:11</lastBuildDate>
   <language>en-us</language>
+<item>
+  <title>Heightmap</title>
+  <description>[CDATA[ A programming challenge in which we generate a random terrain that could potentially be used in a game. ]]</description>
+  <pubDate>2014-08-23</pubDate>
+  <link>http://elixirquiz.github.io/2014-08-23-heightmap.html</link>
+  <guid>http://elixirquiz.github.io/2014-08-23-heightmap.html</guid>
+</item>
 <item>
   <title>Run Length Encoding</title>
   <description>[CDATA[ A programming challenge in which we take strings of uppercase characters, and return a version that has been compressed with the Run Length Encoding algorithm ]]</description>
