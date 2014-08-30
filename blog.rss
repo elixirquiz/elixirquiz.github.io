@@ -4,8 +4,15 @@
   <title>Elixir Quiz</title>
   <link>http://elixirquiz.github.io</link>
   <description>Weekly programming problems to help you learn Elixir</description>
-  <lastBuildDate>2014-08-23 02:24:11</lastBuildDate>
+  <lastBuildDate>2014-08-30 05:17:31</lastBuildDate>
   <language>en-us</language>
+<item>
+  <title>Poker part 1: A deck of cards</title>
+  <description>[CDATA[ In this edition of Elixir Quiz, we start work on our first multi week project, building a game of poker ]]</description>
+  <pubDate>2014-08-30</pubDate>
+  <link>http://elixirquiz.github.io/2014-08-30-poker-part-1-a-deck-of-cards.html</link>
+  <guid>http://elixirquiz.github.io/2014-08-30-poker-part-1-a-deck-of-cards.html</guid>
+</item>
 <item>
   <title>Heightmap</title>
   <description>[CDATA[ A programming challenge in which we generate a random terrain that could potentially be used in a game. ]]</description>
