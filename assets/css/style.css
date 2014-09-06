@@ -102,3 +102,11 @@ code, code.inline {
   color: #4a3966;
 }
 
+#post ul {
+  list-style: disc;
+  margin-left: 2em;
+}
+
+#post li {
+  margin-bottom: .4em;
+}
