@@ -4,8 +4,15 @@
   <title>Elixir Quiz</title>
   <link>http://elixirquiz.github.io</link>
   <description>Weekly programming problems to help you learn Elixir</description>
-  <lastBuildDate>2014-08-30 05:29:36</lastBuildDate>
+  <lastBuildDate>2014-09-06 01:34:24</lastBuildDate>
   <language>en-us</language>
+<item>
+  <title>Poker part 2: Finding a winner</title>
+  <description>[CDATA[ In this edition of Elixir Quiz, we continue work on our game of poker. This week we will be creating hands and comparing them ]]</description>
+  <pubDate>2014-09-06</pubDate>
+  <link>http://elixirquiz.github.io/2014-09-06-poker-part-2-finding-a-winner.html</link>
+  <guid>http://elixirquiz.github.io/2014-09-06-poker-part-2-finding-a-winner.html</guid>
+</item>
 <item>
   <title>Poker part 1: A deck of cards</title>
   <description>[CDATA[ In this edition of Elixir Quiz, we start work on our first multi week project, building a game of poker ]]</description>
