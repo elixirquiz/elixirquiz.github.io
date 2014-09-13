@@ -4,8 +4,15 @@
   <title>Elixir Quiz</title>
   <link>http://elixirquiz.github.io</link>
   <description>Weekly programming problems to help you learn Elixir</description>
-  <lastBuildDate>2014-09-06 01:41:30</lastBuildDate>
+  <lastBuildDate>2014-09-13 00:34:29</lastBuildDate>
   <language>en-us</language>
+<item>
+  <title>Poker part 3: Making decisions</title>
+  <description>[CDATA[ In this edition of Elixir Quiz, we continue work on our game of poker. This week we will be building a simple AI for our game ]]</description>
+  <pubDate>2014-09-13</pubDate>
+  <link>http://elixirquiz.github.io/2014-09-13-poker-part-3-making-decisions.html</link>
+  <guid>http://elixirquiz.github.io/2014-09-13-poker-part-3-making-decisions.html</guid>
+</item>
 <item>
   <title>Poker part 2: Finding a winner</title>
   <description>[CDATA[ In this edition of Elixir Quiz, we continue work on our game of poker. This week we will be creating hands and comparing them ]]</description>
