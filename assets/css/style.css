@@ -24,6 +24,10 @@ body {
   margin: 0 .3em;
 }
 
+.header a:hover{
+    text-decoration: none;
+}
+
 a, a:visited {
   color: #4e2a8e;
   text-decoration: none;
