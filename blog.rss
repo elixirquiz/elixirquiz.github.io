@@ -4,8 +4,15 @@
   <title>Elixir Quiz</title>
   <link>http://elixirquiz.github.io</link>
   <description>Weekly programming problems to help you learn Elixir</description>
-  <lastBuildDate>2014-09-20 16:14:58</lastBuildDate>
+  <lastBuildDate>2014-09-26 22:45:03</lastBuildDate>
   <language>en-us</language>
+<item>
+  <title>Chat server</title>
+  <description>[CDATA[ In this edition of Elixir Quiz, we create a simple chat server. ]]</description>
+  <pubDate>2014-09-27</pubDate>
+  <link>http://elixirquiz.github.io/2014-09-27-chat-server.html</link>
+  <guid>http://elixirquiz.github.io/2014-09-27-chat-server.html</guid>
+</item>
 <item>
   <title>Poker part 4: Playing a game</title>
   <description>[CDATA[ In this edition of Elixir Quiz, we finish off our game of poker. This week we will tie everything together into a simple game we can play ]]</description>
