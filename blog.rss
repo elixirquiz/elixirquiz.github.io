@@ -4,8 +4,15 @@
   <title>Elixir Quiz</title>
   <link>http://elixirquiz.github.io</link>
   <description>Weekly programming problems to help you learn Elixir</description>
-  <lastBuildDate>2014-09-26 22:45:03</lastBuildDate>
+  <lastBuildDate>2014-10-04 00:32:12</lastBuildDate>
   <language>en-us</language>
+<item>
+  <title>Virtual Pet</title>
+  <description>[CDATA[ In this edition of Elixir Quiz, we create a virtual pet for us to care for. ]]</description>
+  <pubDate>2014-10-04</pubDate>
+  <link>http://elixirquiz.github.io/2014-10-04-virtual-pet.html</link>
+  <guid>http://elixirquiz.github.io/2014-10-04-virtual-pet.html</guid>
+</item>
 <item>
   <title>Chat server</title>
   <description>[CDATA[ In this edition of Elixir Quiz, we create a simple chat server. ]]</description>
