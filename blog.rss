@@ -4,8 +4,15 @@
   <title>Elixir Quiz</title>
   <link>http://elixirquiz.github.io</link>
   <description>Weekly programming problems to help you learn Elixir</description>
-  <lastBuildDate>2014-10-11 10:36:21</lastBuildDate>
+  <lastBuildDate>2014-10-18 00:12:40</lastBuildDate>
   <language>en-us</language>
+<item>
+  <title>Caesar Cipher</title>
+  <description>[CDATA[ In this edition of Elixir Quiz, we enctypt a piece of text using a Caesar Cipher ]]</description>
+  <pubDate>2014-10-18</pubDate>
+  <link>http://elixirquiz.github.io/2014-10-18-caesar-ciphers.html</link>
+  <guid>http://elixirquiz.github.io/2014-10-18-caesar-ciphers.html</guid>
+</item>
 <item>
   <title>Identicons</title>
   <description>[CDATA[ In this edition of Elixir Quiz, we create a module that will generate Identicons for people based on their username ]]</description>
