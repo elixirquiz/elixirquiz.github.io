@@ -4,8 +4,15 @@
   <title>Elixir Quiz</title>
   <link>http://elixirquiz.github.io</link>
   <description>Weekly programming problems to help you learn Elixir</description>
-  <lastBuildDate>2014-10-18 00:12:40</lastBuildDate>
+  <lastBuildDate>2014-10-25 00:34:15</lastBuildDate>
   <language>en-us</language>
+<item>
+  <title>Tournament Generation</title>
+  <description>[CDATA[ In this edition of Elixir Quiz, we will generate a tournament schedule for a given set of teams. ]]</description>
+  <pubDate>2014-10-25</pubDate>
+  <link>http://elixirquiz.github.io/2014-10-25-tournament-generation.html</link>
+  <guid>http://elixirquiz.github.io/2014-10-25-tournament-generation.html</guid>
+</item>
 <item>
   <title>Caesar Cipher</title>
   <description>[CDATA[ In this edition of Elixir Quiz, we enctypt a piece of text using a Caesar Cipher ]]</description>

@@ -33,23 +33,30 @@
     <div class="main">
       <div class="container">
         <div class="twelve columns alpha content">
-          <div class="index">
-  <h1>Problems</h1>
-  <div class="row">
-    <a href="2014-08-16-run-length-encoding.html">Run length encoding</a><br />
-<a href="2014-08-11-fizzbuzz.html">Fizzbuzz</a>
-  </div>
-  <div class="row">
-    <div class="index-nav">
-      <div class="four columns alpha">
-        <a href="index.html">Previous Page</a> &nbsp;
-      </div>
-      <div class="four columns">&nbsp;</div>
-      <div class="four columns omega pull-right">
-         &nbsp;
-      </div>
-    </div>
-  </div>
+          <div id="post">
+  <h2>Tournament Generation</h2>
+  <p>Welcome to the twelfth edition of Elixir Quiz. This week we will be generating a tournament schedule for a set of teams.</p>
+<h3>Tournament schedule</h3>
+<p>In competitions with several teams, a round robin system is commonly used to determine the winner of the competition. In this system, each team plays every other team in turn. In many cases, this pattern is repeated a second time. This ensures that no one team has a particualr advantage, by allowing each team to play every other team once at their own home ground, and once at the opposition’s.</p>
+<p>Points are awarded to each team based on the outcome of the match played, and once all the matches are completed, a winner can be determined. In most modern competitions, 3 points are awarded to the winning team, with 0 points being awarded to the losing team. In the case of a tie, both teams earn 1 point.</p>
+<p>Other scoring systems exist, and are designed by the organisers to encourage or discourage certain styles of play. For example, the 3 point for a win system was originally adopted to encourage more attacking play in <a href="http://en.wikipedia.org/wiki/Three_points_for_a_win">English football</a>. It was thought that teams would be less likely to settle for a tie if the reward for winning a match was greater. Similarly in <a href="http://en.wikipedia.org/wiki/Australian_domestic_limited-overs_cricket_tournament#Points_system">Australian domestic cricket</a>, more attacking play is encouraged by awarding bonus points to teams whose scoring rate exceeds the opposition by certain amounts.</p>
+<h3>The problem</h3>
+<blockquote><p>Given a list of unique team names, generate a tournament schedule with the following rules</p>
+</blockquote>
+<ul>
+<li>Each team must play each other twice. Given 4 teams, each team would play 6 matches (2 matches against the other 3 teams) and there would be 12 matches in total
+</li>
+<li>If there are an odd number of teams, one team in the group must be given a ‘bye’ each round.
+</li>
+<li>No team may play against a team for a second time until it has played all other teams at least once.
+</li>
+</ul>
+<h3>How do I enter?</h3>
+<p>The Tournament Schedule quiz runs from Saturday October 25th 2014 until Friday October 31st, 2014.</p>
+<p>To enter, just complete the problem and post the code to <a href="http://reddit.com/r/elixirquiz">our subreddit</a>. As always, you can host your code anywhere (like <a href="https://gist.github.com/">Github Gists</a>), or post your solution directly into the subreddit post.</p>
+<h3>Example solutions</h3>
+<p>After the quiz period ends on October 31st, I will update this section and talk about some interesting solutions that were posted to <a href="http://reddit.com/r/elixirquiz">our subreddit</a></p>
+
 </div>
 
         </div>
