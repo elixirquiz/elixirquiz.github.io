@@ -4,8 +4,15 @@
   <title>Elixir Quiz</title>
   <link>http://elixirquiz.github.io</link>
   <description>Weekly programming problems to help you learn Elixir</description>
-  <lastBuildDate>2014-10-25 00:34:15</lastBuildDate>
+  <lastBuildDate>2014-11-01 02:04:38</lastBuildDate>
   <language>en-us</language>
+<item>
+  <title>Conway's Game of Life</title>
+  <description>[CDATA[ In this edition of Elixir Quiz, we will be creating the cellular automata, Conway's Game of Life ]]</description>
+  <pubDate>2014-11-01</pubDate>
+  <link>http://elixirquiz.github.io/2014-11-01-game-of-life.html</link>
+  <guid>http://elixirquiz.github.io/2014-11-01-game-of-life.html</guid>
+</item>
 <item>
   <title>Tournament Generation</title>
   <description>[CDATA[ In this edition of Elixir Quiz, we will generate a tournament schedule for a given set of teams. ]]</description>
