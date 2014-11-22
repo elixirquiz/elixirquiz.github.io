@@ -4,8 +4,15 @@
   <title>Elixir Quiz</title>
   <link>http://elixirquiz.github.io</link>
   <description>Weekly programming problems to help you learn Elixir</description>
-  <lastBuildDate>2014-11-01 02:04:38</lastBuildDate>
+  <lastBuildDate>2014-11-22 02:58:26</lastBuildDate>
   <language>en-us</language>
+<item>
+  <title>Tic Tac Toe part 1: The Game</title>
+  <description>[CDATA[ In this edition of Elixir Quiz, we will be creating a game of Tic Tac Toe that we can incorporate into a larger, multi-user project ]]</description>
+  <pubDate>2014-11-22</pubDate>
+  <link>http://elixirquiz.github.io/2014-11-22-tic-tac-toe-part-1-the-game.html</link>
+  <guid>http://elixirquiz.github.io/2014-11-22-tic-tac-toe-part-1-the-game.html</guid>
+</item>
 <item>
   <title>Conway's Game of Life</title>
   <description>[CDATA[ In this edition of Elixir Quiz, we will be creating the cellular automata, Conway's Game of Life ]]</description>
