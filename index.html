@@ -35,18 +35,105 @@
         <div class="twelve columns alpha content">
           <div class="index">
   <h1>Problems</h1>
-  <div class="row">
-    <a href="2014-11-22-tic-tac-toe-part-1-the-game.html">Tic tac toe part 1 the game</a><br />
-<a href="2014-11-01-game-of-life.html">Game of life</a><br />
-<a href="2014-10-25-tournament-generation.html">Tournament generation</a><br />
-<a href="2014-10-18-caesar-ciphers.html">Caesar ciphers</a><br />
-<a href="2014-10-11-identicons.html">Identicons</a><br />
-<a href="2014-10-04-virtual-pet.html">Virtual pet</a><br />
-<a href="2014-09-27-chat-server.html">Chat server</a><br />
-<a href="2014-09-20-poker-part-4-playing-a-game.html">Poker part 4 playing a game</a><br />
-<a href="2014-09-13-poker-part-3-making-decisions.html">Poker part 3 making decisions</a><br />
-<a href="2014-09-06-poker-part-2-finding-a-winner.html">Poker part 2 finding a winner</a>
-  </div>
+  <div id="post">
+  <h2><a href="2014-11-29-tic-tac-toe-part-2-the-application.html">Tic Tac Toe part 2: The Application</a></h2>
+  <p>Welcome to the fifteenth edition of Elixir Quiz. This week we will be
+continuing our multi-week Tic Tac Toe project.</p>
+<p>Last week we built a game that could be played by a human and a computer player.
+This week we will be continuing that game, and making it possible for a game
+server to manage several games at once.</p>
+<h3>Supervision Trees</h3>
+<p>The official <a href="http://www.erlang.org/doc/man/supervisor.html">Erlang
+documentation</a> describes
+supervisors as:</p>
+<blockquote><p>a process which supervises other processes called child processes. A child
+process can either be another supervisor or a worker process.</p>
+</blockquote>
+<blockquote><p>Supervisors are used to build an hierarchical process structure called a
+supervision tree, a nice way to structure a fault tolerant application.</p>
+</blockquote>
+<p>For more information, see the <a href="http://www.erlang.org/doc/design_principles/des_princ.html">OTP design
+principles</a>
+document.</p>
+<h3>The problem</h3>
+<blockquote><p>Create an OTP application that manages several games of tic-tac-toe. The games
+should be monitored by a supervisor, and recover if they crash for any reason.</p>
+</blockquote>
+<p>Next week we’ll create an interface for the game so that people can connect to
+it and play against other people.</p>
+<p>Like last week, a good reference on how a multiplayer game can hang together in an OTP application, check out Martin Schurrer’s <a href="http://www.confreaks.com/videos/4131-elixirconf2014-otp-in-production-the-nitty-gritty-details-of-game-servers">talk at ElixirConf 2014.</a></p>
+<h3>How do I enter?</h3>
+<p>Part 2 of the Tic Tac Toe quiz runs from Saturday November 29th 2014 until Friday December 5th, 2014.</p>
+<p>To enter, just complete the problem and post a link to the code on Twitter, and mention <a href="https://twitter.com/elixir_quiz">@elixir_quiz</a>. As always, you can host your code anywhere (like <a href="https://gist.github.com/">Github Gists</a>), or post your solution directly into the subreddit post.</p>
+<h3>Example solutions</h3>
+<p>After the quiz period ends on December 5th, I will update this section and talk about some interesting solutions that were posted on Twitter.</p>
+
+</div>
+
+<hr class="post-base" />
+<div id="post">
+  <h2><a href="2014-11-22-tic-tac-toe-part-1-the-game.html">Tic Tac Toe part 1: The Game</a></h2>
+  <p>Welcome to the fourteenth edition of Elixir Quiz. This week we will be starting another multi-week project in which we create a multi player game of <a href="http://en.wikipedia.org/wiki/Tic-tac-toe">Tic Tac Toe</a>.</p>
+<p>In previous weeks we built our first multi-week project, where we <a href="http://elixirquiz.github.io/2014-08-30-poker-part-1-a-deck-of-cards.html">completed</a> <a href="http://elixirquiz.github.io/2014-09-06-poker-part-2-finding-a-winner.html">the</a> <a href="http://elixirquiz.github.io/2014-09-13-poker-part-3-making-decisions.html">poker</a> <a href="http://elixirquiz.github.io/2014-09-20-poker-part-4-playing-a-game.html">game</a>. The point of the poker game was to learn more about pattern matching. This time we’re building a much simpler game, so that we can focus on the multi-user party of the application, and learn more about <a href="http://learnyousomeerlang.com/what-is-otp">OTP</a>.</p>
+<h3>Tic Tac Toe</h3>
+<p><a href="http://en.wikipedia.org/wiki/Tic-tac-toe">Tic Tac Toe</a> is a traditional pen and paper game played by 2 players.</p>
+<p>The game takes place on a 3x3 grid, with players taking turns placing their token (either an X or a O) in an available square. A winner is determined when one player places 3 tokens in a row, either vertically, horizontally or diagonally. A draw is declared if all 9 squares are populated with tokens without a line of 3 existing for either player.</p>
+<h3>The problem</h3>
+<blockquote><p>Create a project that allows a person to play a game of Tic Tac Toe against a computer player. The AI doesn’t need to be sophisticated, and can be as simple as choosing random squares to place it’s token.</p>
+</blockquote>
+<p>Remember that we’re planning on expanding this into a larger, multi-user system. We will eventually want to have many different games running simultaneously, so having a game run as a process, with connected processes for each player may be a good idea.</p>
+<p>For reference on how a multiplayer game can hang together in an OTP application, check out Martin Schurrer’s <a href="http://www.confreaks.com/videos/4131-elixirconf2014-otp-in-production-the-nitty-gritty-details-of-game-servers">talk at ElixirConf 2014.</a></p>
+<h3>How do I enter?</h3>
+<p>Part 1 of the Tic Tac Toe quiz runs from Saturday November 22nd 2014 until Friday November 28th, 2014.</p>
+<p>To enter, just complete the problem and post a link to the code on Twitter, and mention <a href="https://twitter.com/elixir_quiz">@elixir_quiz</a>. As always, you can host your code anywhere (like <a href="https://gist.github.com/">Github Gists</a>), or post your solution directly into the subreddit post.</p>
+<h3>Example solutions</h3>
+<p>After the quiz period ends on November 28th, I will update this section and talk about some interesting solutions that were posted on Twitter.</p>
+
+</div>
+
+<hr class="post-base" />
+<div id="post">
+  <h2><a href="2014-11-01-game-of-life.html">Conway's Game of Life</a></h2>
+  <p>Welcome to the thirteenth edition of Elixir Quiz. This week we will be creating the cellular automata, Conway’s Game of Life.</p>
+<h3>Conway's Game of Life</h3>
+<p><a href="http://en.wikipedia.org/wiki/Conway%27s_Game_of_Life">Conway’s Game of Life</a> is a cellular automata designed in 1970 by the British mathemetician John Conway.</p>
+<p>The game is designed to simulate a population evolving over time, taking into account factors such as overcrowding, reproduction and under-population. The game isn’t really played by anyone, other than a human creating the initial cell configuration for the simulation.</p>
+<p>The game shows that complex systems can emerge from very simple rules, as we’ll see in the next section. The game produces interesting patterns that can migrate across the world, be completely self sustainable, or even create complex patterns that generate new migrating patterns. These patterns <a href="http://en.wikipedia.org/wiki/Conway%27s_Game_of_Life#Examples_of_patterns">are well documented</a></p>
+<h3>The problem</h3>
+<blockquote><p>Write a module that reads in a text file, which contains the initial state of the game. The initial grid should follow these rules:</p>
+</blockquote>
+<ul>
+<li>An empty cell is represented by a space character ( )
+</li>
+<li>A filled cell is represented by a hash (or pound) character (#)
+</li>
+<li>The grid must be at least 5x5, an no bigger than 40x40
+</li>
+</ul>
+<blockquote><p>Once the initial configuration is read in, the simulation begins and the user should be able to observe it in real time.</p>
+</blockquote>
+<blockquote><p>The simulation should follow the traditional rules of the game, in which each step of the simulation is created using the following transformation:</p>
+</blockquote>
+<ul>
+<li>Any live cell with fewer than two live neighbours dies, as if caused by under-population.
+</li>
+<li>Any live cell with two or three live neighbours lives on to the next generation.
+</li>
+<li>Any live cell with more than three live neighbours dies, as if by overcrowding.
+</li>
+<li>Any dead cell with exactly three live neighbours becomes a live cell, as if by reproduction.
+</li>
+</ul>
+<h3>How do I enter?</h3>
+<p>The Conway’s Game of Life quiz runs from Saturday November 1st 2014 until Friday November 7th, 2014.</p>
+<p>To enter, just complete the problem and post a link to the code on Twitter, and mention <a href="https://twitter.com/elixir_quiz">@elixir_quiz</a>. As always, you can host your code anywhere (like <a href="https://gist.github.com/">Github Gists</a>), or post your solution directly into the subreddit post.</p>
+<h3>Example solutions</h3>
+<p>After the quiz period ends on November 7th, I will update this section and talk about some interesting solutions that were posted on Twitter.</p>
+
+</div>
+
+<hr class="post-base" />
+
   <div class="row">
     <div class="index-nav">
       <div class="four columns alpha">

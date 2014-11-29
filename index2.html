@@ -35,12 +35,80 @@
         <div class="twelve columns alpha content">
           <div class="index">
   <h1>Problems</h1>
-  <div class="row">
-    <a href="2014-08-30-poker-part-1-a-deck-of-cards.html">Poker part 1 a deck of cards</a><br />
-<a href="2014-08-23-heightmap.html">Heightmap</a><br />
-<a href="2014-08-16-run-length-encoding.html">Run length encoding</a><br />
-<a href="2014-08-11-fizzbuzz.html">Fizzbuzz</a>
-  </div>
+  <div id="post">
+  <h2><a href="2014-10-25-tournament-generation.html">Tournament Generation</a></h2>
+  <p>Welcome to the twelfth edition of Elixir Quiz. This week we will be generating a tournament schedule for a set of teams.</p>
+<h3>Tournament schedule</h3>
+<p>In competitions with several teams, a round robin system is commonly used to determine the winner of the competition. In this system, each team plays every other team in turn. In many cases, this pattern is repeated a second time. This ensures that no one team has a particualr advantage, by allowing each team to play every other team once at their own home ground, and once at the opposition’s.</p>
+<p>Points are awarded to each team based on the outcome of the match played, and once all the matches are completed, a winner can be determined. In most modern competitions, 3 points are awarded to the winning team, with 0 points being awarded to the losing team. In the case of a tie, both teams earn 1 point.</p>
+<p>Other scoring systems exist, and are designed by the organisers to encourage or discourage certain styles of play. For example, the 3 point for a win system was originally adopted to encourage more attacking play in <a href="http://en.wikipedia.org/wiki/Three_points_for_a_win">English football</a>. It was thought that teams would be less likely to settle for a tie if the reward for winning a match was greater. Similarly in <a href="http://en.wikipedia.org/wiki/Australian_domestic_limited-overs_cricket_tournament#Points_system">Australian domestic cricket</a>, more attacking play is encouraged by awarding bonus points to teams whose scoring rate exceeds the opposition by certain amounts.</p>
+<h3>The problem</h3>
+<blockquote><p>Given a list of unique team names, generate a tournament schedule with the following rules</p>
+</blockquote>
+<ul>
+<li>Each team must play each other twice. Given 4 teams, each team would play 6 matches (2 matches against the other 3 teams) and there would be 12 matches in total
+</li>
+<li>If there are an odd number of teams, one team in the group must be given a ‘bye’ each round.
+</li>
+<li>No team may play against a team for a second time until it has played all other teams at least once.
+</li>
+</ul>
+<h3>How do I enter?</h3>
+<p>The Tournament Schedule quiz runs from Saturday October 25th 2014 until Friday October 31st, 2014.</p>
+<p>To enter, just complete the problem and post the code to <a href="http://reddit.com/r/elixirquiz">our subreddit</a>. As always, you can host your code anywhere (like <a href="https://gist.github.com/">Github Gists</a>), or post your solution directly into the subreddit post.</p>
+<h3>Example solutions</h3>
+<p>After the quiz period ends on October 31st, I will update this section and talk about some interesting solutions that were posted to <a href="http://reddit.com/r/elixirquiz">our subreddit</a></p>
+
+</div>
+
+<hr class="post-base" />
+<div id="post">
+  <h2><a href="2014-10-18-caesar-ciphers.html">Caesar Cipher</a></h2>
+  <p>Welcome to the eleventh edition of Elixir Quiz. This week we will be encrypting a piece of text using a simple Caesar Cipher.</p>
+<h3>What is a Caesar Cipher</h3>
+<p>The <a href="http://en.wikipedia.org/wiki/Caesar_cipher">Caesar Cipher</a> is one of the simplest encryption methods.</p>
+<p>It is named after the famous <a href="http://en.wikipedia.org/wiki/Julius_Caesar">Roman general and statesman Julius Caesar</a>. Caesar used the technique in his reign as Roman general, in which he used a cipher with a left-shift of 3 to hide the contents of his military messages.</p>
+<p>Another famous Caesar Cipher is known as <a href="http://en.wikipedia.org/wiki/ROT13">ROT13</a>, in which the text is shifted by 13 characters. This was popular in the early days of the internet, to hide spoilers on <a href="http://en.wikipedia.org/wiki/Usenet">Usenet</a> forums.</p>
+<p>The cipher is extremely insecure, as it is susceptible to <a href="http://en.wikipedia.org/wiki/Frequency_analysis">frequency analysis</a> attacks.</p>
+<h3>The problem</h3>
+<blockquote><p>Create a function that takes a piece of plain text (either in a string, or as a path to a file), as well as a number, and performs a shift of that many places on the text.</p>
+</blockquote>
+<blockquote><p>As a stretch goal, see if you can reduce the time taken to encrypt large pieces of text by encrypting sections of it in parallel.</p>
+</blockquote>
+<h3>How do I enter?</h3>
+<p>The Caesar Cipher quiz runs from Saturday October 18th 2014 until Friday October 24th, 2014.</p>
+<p>To enter, just complete the problem and post the code to <a href="http://reddit.com/r/elixirquiz">our subreddit</a>. As always, you can host your code anywhere (like <a href="https://gist.github.com/">Github Gists</a>), or post your solution directly into the subreddit post.</p>
+<h3>Example solutions</h3>
+<p>After the quiz period ends on October 24th, I will update this section and talk about some interesting solutions that were posted to <a href="http://reddit.com/r/elixirquiz">our subreddit</a></p>
+
+</div>
+
+<hr class="post-base" />
+<div id="post">
+  <h2><a href="2014-10-11-identicons.html">Identicons</a></h2>
+  <p>Welcome to the tenth edition of Elixir Quiz. This week we are creating a module to generate <a href="http://en.wikipedia.org/wiki/Identicon">Identicons</a> from a given username.</p>
+<h3>What is an Identicon</h3>
+<p>The idea for Identicons was first pitched by <a href="https://web.archive.org/web/20080703155519/www.docuverse.com/blog/donpark/2007/01/18/visual-security-9-block-ip-identification">Don Park in 2007</a>, where he said:</p>
+<blockquote><p>I originally came up with this idea to be used as an easy means of visually distinguishing multiple units of information, anything that can be reduced to bits. It’s not just IPs but also people, places, and things. IMHO, too much of the web what we read are textual or numeric information which are not easy to distinguish at a glance when they are jumbled up together. So I think adding visual identifiers will make the user experience much more enjoyable.</p>
+</blockquote>
+<p>Many websites such as <a href="https://github.com/blog/1586-identicons">Github</a> and <a href="http://blog.stackoverflow.com/2008/06/gravatars-identicons-and-you/">Stack Overflow</a> generate Identicons for users who haven’t either uploaded an image to their account, or don’t have a <a href="https://en.gravatar.com/">Gravatar</a> account.</p>
+<p>This week, we will be implementing our own Identicon algorithm.</p>
+<h3>The problem</h3>
+<blockquote><p>Create a function that takes a string as input and produces and image representation of that string.</p>
+</blockquote>
+<blockquote><p>The result shouldn’t be random, in that calling the function twice with the same string should generate the same image.</p>
+</blockquote>
+<p>This <a href="http://blog.stackoverflow.com/2008/06/gravatars-identicons-and-you/">Stack Overflow blog post</a> includes an algorithm for generating Identicons, however you are encouraged to come up with your own.</p>
+<h3>How do I enter?</h3>
+<p>The Identicon quiz runs from Saturday October 11th 2014 until Friday October 17th, 2014.</p>
+<p>To enter, just complete the problem and post the code to <a href="http://reddit.com/r/elixirquiz">our subreddit</a>. As always, you can host your code anywhere (like <a href="https://gist.github.com/">Github Gists</a>), or post your solution directly into the subreddit post.</p>
+<h3>Example solutions</h3>
+<p>After the quiz period ends on October 17th, I will update this section and talk about some interesting solutions that were posted to <a href="http://reddit.com/r/elixirquiz">our subreddit</a></p>
+
+</div>
+
+<hr class="post-base" />
+
   <div class="row">
     <div class="index-nav">
       <div class="four columns alpha">
@@ -48,7 +116,7 @@
       </div>
       <div class="four columns">&nbsp;</div>
       <div class="four columns omega pull-right">
-         &nbsp;
+        <a href="index3.html">Next Page</a> &nbsp;
       </div>
     </div>
   </div>

@@ -4,8 +4,15 @@
   <title>Elixir Quiz</title>
   <link>http://elixirquiz.github.io</link>
   <description>Weekly programming problems to help you learn Elixir</description>
-  <lastBuildDate>2014-11-22 02:58:26</lastBuildDate>
+  <lastBuildDate>2014-11-29 22:08:49</lastBuildDate>
   <language>en-us</language>
+<item>
+  <title>Tic Tac Toe part 2: The Application</title>
+  <description>[CDATA[ In this edition of Elixir Quiz, we will be continuing with our game of Tic Tac Toe, this week using OTP to manage multiple games ]]</description>
+  <pubDate>2014-11-29</pubDate>
+  <link>http://elixirquiz.github.io/2014-11-29-tic-tac-toe-part-2-the-application.html</link>
+  <guid>http://elixirquiz.github.io/2014-11-29-tic-tac-toe-part-2-the-application.html</guid>
+</item>
 <item>
   <title>Tic Tac Toe part 1: The Game</title>
   <description>[CDATA[ In this edition of Elixir Quiz, we will be creating a game of Tic Tac Toe that we can incorporate into a larger, multi-user project ]]</description>

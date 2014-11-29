@@ -114,3 +114,7 @@ code, code.inline {
 #post li {
   margin-bottom: .4em;
 }
+
+.post-base {
+  margin-bottom: 1.5em;
+}

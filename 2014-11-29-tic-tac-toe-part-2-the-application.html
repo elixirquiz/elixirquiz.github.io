@@ -34,25 +34,37 @@
       <div class="container">
         <div class="twelve columns alpha content">
           <div id="post">
-  <h2><a href="2014-09-13-poker-part-3-making-decisions.html">Poker part 3: Making decisions</a></h2>
-  <p>Welcome to the sixth edition of Elixir Quiz. This week, we continue with our <a href="http://en.wikipedia.org/wiki/Five-card_draw">5 card draw</a> poker game. This week we create a simple AI that will decide which cards to discard.</p>
-<h3>Discarding</h3>
-<p>During the middle phase of a 5 card draw game, players decide which (if any) cards should be removed from their hand and replaced with new cards. Each player receives only one chance to discard during a game.</p>
-<p>Basic strategy in 5 card draw focuses on the probability of getting the cards required to improve your hand, as well as your position in relation to the dealer. There are <a href="http://www.toppoker.org/home-poker/five-card-draw-dm.html">plenty of</a> <a href="http://articles.grinderschool.com/five-card-draw">resources</a> <a href="http://www.onlinepoker.net/Poker-Strategy/Five-Card-Draw-Poker-Strategy.php">on the web</a> that describe strategies for playing 5 card draw.</p>
-<p>In our version of the game, we’re not going to include betting (unless you feel like making the extra effort). Our AI doesn’t need to decide when to bet, raise or fold, only which cards that it should discard from it’s hand when given the chance.</p>
-<p>If you’re having trouble deciding what to discard, remember back to <a href="http://elixirquiz.github.io/2014-09-06-poker-part-2-finding-a-winner.html">last weeks problem</a> where we took a look at which combinations of 5 cards were the most valuable.</p>
+  <h2><a href="2014-11-29-tic-tac-toe-part-2-the-application.html">Tic Tac Toe part 2: The Application</a></h2>
+  <p>Welcome to the fifteenth edition of Elixir Quiz. This week we will be
+continuing our multi-week Tic Tac Toe project.</p>
+<p>Last week we built a game that could be played by a human and a computer player.
+This week we will be continuing that game, and making it possible for a game
+server to manage several games at once.</p>
+<h3>Supervision Trees</h3>
+<p>The official <a href="http://www.erlang.org/doc/man/supervisor.html">Erlang
+documentation</a> describes
+supervisors as:</p>
+<blockquote><p>a process which supervises other processes called child processes. A child
+process can either be another supervisor or a worker process.</p>
+</blockquote>
+<blockquote><p>Supervisors are used to build an hierarchical process structure called a
+supervision tree, a nice way to structure a fault tolerant application.</p>
+</blockquote>
+<p>For more information, see the <a href="http://www.erlang.org/doc/design_principles/des_princ.html">OTP design
+principles</a>
+document.</p>
 <h3>The problem</h3>
-<blockquote><p>Create an AI module that separates a hand of 5 cards into 2 separate lists, one to keep and one to discard.</p>
+<blockquote><p>Create an OTP application that manages several games of tic-tac-toe. The games
+should be monitored by a supervisor, and recover if they crash for any reason.</p>
 </blockquote>
-<blockquote><p>The example below shows us taking a hand with a pair of aces. The AI keeps the pair and discards the rest, giving more chances to obtain a third (or fourth) ace.</p>
-</blockquote>
-<pre><code>iex&gt; ComputerPlayer.discard [ &quot;AH&quot;, &quot;2C&quot;, &quot;9D&quot;, &quot;AC&quot;, &quot;4H&quot; ]
-=&gt; { [ &quot;2C&quot;, &quot;4H&quot;, &quot;9D&quot; ], [ &quot;AH&quot;, &quot;AC&quot; ] }</code></pre>
+<p>Next week we’ll create an interface for the game so that people can connect to
+it and play against other people.</p>
+<p>Like last week, a good reference on how a multiplayer game can hang together in an OTP application, check out Martin Schurrer’s <a href="http://www.confreaks.com/videos/4131-elixirconf2014-otp-in-production-the-nitty-gritty-details-of-game-servers">talk at ElixirConf 2014.</a></p>
 <h3>How do I enter?</h3>
-<p>The Poker part 3 quiz runs from Saturday September 13th 2014 until Friday September 19th, 2014.</p>
-<p>To enter, just complete the problem and post the code to <a href="http://reddit.com/r/elixirquiz">our subreddit</a>. Add this code to your existing poker project.</p>
+<p>Part 2 of the Tic Tac Toe quiz runs from Saturday November 29th 2014 until Friday December 5th, 2014.</p>
+<p>To enter, just complete the problem and post a link to the code on Twitter, and mention <a href="https://twitter.com/elixir_quiz">@elixir_quiz</a>. As always, you can host your code anywhere (like <a href="https://gist.github.com/">Github Gists</a>), or post your solution directly into the subreddit post.</p>
 <h3>Example solutions</h3>
-<p>After the quiz period ends on September 19th, I will update this section and talk about some interesting solutions that were posted to <a href="http://reddit.com/r/elixirquiz">our subreddit</a></p>
+<p>After the quiz period ends on December 5th, I will update this section and talk about some interesting solutions that were posted on Twitter.</p>
 
 </div>
 

@@ -33,7 +33,33 @@
     <div class="main">
       <div class="container">
         <div class="twelve columns alpha content">
-          <div id="post">
+          <div class="index">
+  <h1>Problems</h1>
+  <div id="post">
+  <h2><a href="2014-09-13-poker-part-3-making-decisions.html">Poker part 3: Making decisions</a></h2>
+  <p>Welcome to the sixth edition of Elixir Quiz. This week, we continue with our <a href="http://en.wikipedia.org/wiki/Five-card_draw">5 card draw</a> poker game. This week we create a simple AI that will decide which cards to discard.</p>
+<h3>Discarding</h3>
+<p>During the middle phase of a 5 card draw game, players decide which (if any) cards should be removed from their hand and replaced with new cards. Each player receives only one chance to discard during a game.</p>
+<p>Basic strategy in 5 card draw focuses on the probability of getting the cards required to improve your hand, as well as your position in relation to the dealer. There are <a href="http://www.toppoker.org/home-poker/five-card-draw-dm.html">plenty of</a> <a href="http://articles.grinderschool.com/five-card-draw">resources</a> <a href="http://www.onlinepoker.net/Poker-Strategy/Five-Card-Draw-Poker-Strategy.php">on the web</a> that describe strategies for playing 5 card draw.</p>
+<p>In our version of the game, we’re not going to include betting (unless you feel like making the extra effort). Our AI doesn’t need to decide when to bet, raise or fold, only which cards that it should discard from it’s hand when given the chance.</p>
+<p>If you’re having trouble deciding what to discard, remember back to <a href="http://elixirquiz.github.io/2014-09-06-poker-part-2-finding-a-winner.html">last weeks problem</a> where we took a look at which combinations of 5 cards were the most valuable.</p>
+<h3>The problem</h3>
+<blockquote><p>Create an AI module that separates a hand of 5 cards into 2 separate lists, one to keep and one to discard.</p>
+</blockquote>
+<blockquote><p>The example below shows us taking a hand with a pair of aces. The AI keeps the pair and discards the rest, giving more chances to obtain a third (or fourth) ace.</p>
+</blockquote>
+<pre><code>iex&gt; ComputerPlayer.discard [ &quot;AH&quot;, &quot;2C&quot;, &quot;9D&quot;, &quot;AC&quot;, &quot;4H&quot; ]
+=&gt; { [ &quot;2C&quot;, &quot;4H&quot;, &quot;9D&quot; ], [ &quot;AH&quot;, &quot;AC&quot; ] }</code></pre>
+<h3>How do I enter?</h3>
+<p>The Poker part 3 quiz runs from Saturday September 13th 2014 until Friday September 19th, 2014.</p>
+<p>To enter, just complete the problem and post the code to <a href="http://reddit.com/r/elixirquiz">our subreddit</a>. Add this code to your existing poker project.</p>
+<h3>Example solutions</h3>
+<p>After the quiz period ends on September 19th, I will update this section and talk about some interesting solutions that were posted to <a href="http://reddit.com/r/elixirquiz">our subreddit</a></p>
+
+</div>
+
+<hr class="post-base" />
+<div id="post">
   <h2><a href="2014-09-06-poker-part-2-finding-a-winner.html">Poker part 2: Finding a winner</a></h2>
   <p>Welcome to the fifth installment of Elixir Quiz. This week, we continue with our <a href="http://en.wikipedia.org/wiki/Five-card_draw">5 card draw</a> poker game. We will be building hands from our deck, and then comparing those hands to determine a winner.</p>
 <h3>A player's hand</h3>
@@ -70,6 +96,45 @@
 <h3>Example solutions</h3>
 <p>After the quiz period ends on September 13th, I will update this section and talk about some interesting solutions that were posted to <a href="http://reddit.com/r/elixirquiz">our subreddit</a></p>
 
+</div>
+
+<hr class="post-base" />
+<div id="post">
+  <h2><a href="2014-08-30-poker-part-1-a-deck-of-cards.html">Poker part 1: A deck of cards</a></h2>
+  <p>Welcome to the fourth installment of Elixir Quiz. This week, we embark on our first multi-week project, building a game of 5 card draw poker. This week we will be building the deck of cards.</p>
+<h3>An introduction to 5 card draw</h3>
+<p><a href="http://en.wikipedia.org/wiki/Five-card_draw">5 card draw</a> is one of the simplest variations of poker. It is the game that is most likely to have been played in people’s homes up until the rise in popularity of <a href="http://en.wikipedia.org/wiki/Texas_hold_'em">Texas Hold’em</a>.</p>
+<p>The game begins with each player being dealt 5 cards face down. After each player is dealt their cards, they then assess their initial hands. Players take turns discarding any of their cards and receiving replacements.</p>
+<p>Players then compare their hands against one another to determine the winning hand.</p>
+<p>For our first step, we will build ourselves a <a href="http://en.wikipedia.org/wiki/Standard_52-card_deck">deck of cards</a>.</p>
+<p>If you haven’t explored testing with <a href="http://elixir-lang.org/docs/stable/ex_unit/ExUnit.html">ExUnit</a> yet, the poker project provides a great opportunity to start.</p>
+<h3>The problem</h3>
+<blockquote><p>Create a module that will allow us to create a shuffled deck of cards. The deck should contain the 52 cards included in a regular deck. How the cards and deck are represented are completely up to you.</p>
+</blockquote>
+<blockquote><p>Since we’re working with the cards this week, also ensure that you have a function to compare the value of 2 individual cards. Card values, in high -&gt; low order, are <code class="inline">Ace, King, Queen, Jack, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1</code></p>
+</blockquote>
+<h3>How do I enter?</h3>
+<p>The Poker part 1 quiz runs from Saturday August 30th 2014 until Friday September 5th, 2014.</p>
+<p>To enter, just complete the problem and post the code to <a href="http://reddit.com/r/elixirquiz">our subreddit</a>. I’d suggest this week storing your project in a source control system, as we’ll be working on this for a few weeks.</p>
+<p><a href="https://github.com">GitHub</a> can be useful for hosting your solutions, but anywhere is fine.</p>
+<h3>Example solutions</h3>
+<p>After the quiz period ends on September 5th, I will update this section and talk about some interesting solutions that were posted to <a href="http://reddit.com/r/elixirquiz">our subreddit</a></p>
+
+</div>
+
+<hr class="post-base" />
+
+  <div class="row">
+    <div class="index-nav">
+      <div class="four columns alpha">
+        <a href="index3.html">Previous Page</a> &nbsp;
+      </div>
+      <div class="four columns">&nbsp;</div>
+      <div class="four columns omega pull-right">
+        <a href="index5.html">Next Page</a> &nbsp;
+      </div>
+    </div>
+  </div>
 </div>
 
         </div>
