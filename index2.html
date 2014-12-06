@@ -36,6 +36,47 @@
           <div class="index">
   <h1>Problems</h1>
   <div id="post">
+  <h2><a href="2014-11-01-game-of-life.html">Conway's Game of Life</a></h2>
+  <p>Welcome to the thirteenth edition of Elixir Quiz. This week we will be creating the cellular automata, Conway’s Game of Life.</p>
+<h3>Conway's Game of Life</h3>
+<p><a href="http://en.wikipedia.org/wiki/Conway%27s_Game_of_Life">Conway’s Game of Life</a> is a cellular automata designed in 1970 by the British mathemetician John Conway.</p>
+<p>The game is designed to simulate a population evolving over time, taking into account factors such as overcrowding, reproduction and under-population. The game isn’t really played by anyone, other than a human creating the initial cell configuration for the simulation.</p>
+<p>The game shows that complex systems can emerge from very simple rules, as we’ll see in the next section. The game produces interesting patterns that can migrate across the world, be completely self sustainable, or even create complex patterns that generate new migrating patterns. These patterns <a href="http://en.wikipedia.org/wiki/Conway%27s_Game_of_Life#Examples_of_patterns">are well documented</a></p>
+<h3>The problem</h3>
+<blockquote><p>Write a module that reads in a text file, which contains the initial state of the game. The initial grid should follow these rules:</p>
+</blockquote>
+<ul>
+<li>An empty cell is represented by a space character ( )
+</li>
+<li>A filled cell is represented by a hash (or pound) character (#)
+</li>
+<li>The grid must be at least 5x5, an no bigger than 40x40
+</li>
+</ul>
+<blockquote><p>Once the initial configuration is read in, the simulation begins and the user should be able to observe it in real time.</p>
+</blockquote>
+<blockquote><p>The simulation should follow the traditional rules of the game, in which each step of the simulation is created using the following transformation:</p>
+</blockquote>
+<ul>
+<li>Any live cell with fewer than two live neighbours dies, as if caused by under-population.
+</li>
+<li>Any live cell with two or three live neighbours lives on to the next generation.
+</li>
+<li>Any live cell with more than three live neighbours dies, as if by overcrowding.
+</li>
+<li>Any dead cell with exactly three live neighbours becomes a live cell, as if by reproduction.
+</li>
+</ul>
+<h3>How do I enter?</h3>
+<p>The Conway’s Game of Life quiz runs from Saturday November 1st 2014 until Friday November 7th, 2014.</p>
+<p>To enter, just complete the problem and post a link to the code on Twitter, and mention <a href="https://twitter.com/elixir_quiz">@elixir_quiz</a>. As always, you can host your code anywhere (like <a href="https://gist.github.com/">Github Gists</a>), or post your solution directly into the subreddit post.</p>
+<h3>Example solutions</h3>
+<p>After the quiz period ends on November 7th, I will update this section and talk about some interesting solutions that were posted on Twitter.</p>
+
+</div>
+
+<hr class="post-base" />
+<div id="post">
   <h2><a href="2014-10-25-tournament-generation.html">Tournament Generation</a></h2>
   <p>Welcome to the twelfth edition of Elixir Quiz. This week we will be generating a tournament schedule for a set of teams.</p>
 <h3>Tournament schedule</h3>
@@ -80,30 +121,6 @@
 <p>To enter, just complete the problem and post the code to <a href="http://reddit.com/r/elixirquiz">our subreddit</a>. As always, you can host your code anywhere (like <a href="https://gist.github.com/">Github Gists</a>), or post your solution directly into the subreddit post.</p>
 <h3>Example solutions</h3>
 <p>After the quiz period ends on October 24th, I will update this section and talk about some interesting solutions that were posted to <a href="http://reddit.com/r/elixirquiz">our subreddit</a></p>
-
-</div>
-
-<hr class="post-base" />
-<div id="post">
-  <h2><a href="2014-10-11-identicons.html">Identicons</a></h2>
-  <p>Welcome to the tenth edition of Elixir Quiz. This week we are creating a module to generate <a href="http://en.wikipedia.org/wiki/Identicon">Identicons</a> from a given username.</p>
-<h3>What is an Identicon</h3>
-<p>The idea for Identicons was first pitched by <a href="https://web.archive.org/web/20080703155519/www.docuverse.com/blog/donpark/2007/01/18/visual-security-9-block-ip-identification">Don Park in 2007</a>, where he said:</p>
-<blockquote><p>I originally came up with this idea to be used as an easy means of visually distinguishing multiple units of information, anything that can be reduced to bits. It’s not just IPs but also people, places, and things. IMHO, too much of the web what we read are textual or numeric information which are not easy to distinguish at a glance when they are jumbled up together. So I think adding visual identifiers will make the user experience much more enjoyable.</p>
-</blockquote>
-<p>Many websites such as <a href="https://github.com/blog/1586-identicons">Github</a> and <a href="http://blog.stackoverflow.com/2008/06/gravatars-identicons-and-you/">Stack Overflow</a> generate Identicons for users who haven’t either uploaded an image to their account, or don’t have a <a href="https://en.gravatar.com/">Gravatar</a> account.</p>
-<p>This week, we will be implementing our own Identicon algorithm.</p>
-<h3>The problem</h3>
-<blockquote><p>Create a function that takes a string as input and produces and image representation of that string.</p>
-</blockquote>
-<blockquote><p>The result shouldn’t be random, in that calling the function twice with the same string should generate the same image.</p>
-</blockquote>
-<p>This <a href="http://blog.stackoverflow.com/2008/06/gravatars-identicons-and-you/">Stack Overflow blog post</a> includes an algorithm for generating Identicons, however you are encouraged to come up with your own.</p>
-<h3>How do I enter?</h3>
-<p>The Identicon quiz runs from Saturday October 11th 2014 until Friday October 17th, 2014.</p>
-<p>To enter, just complete the problem and post the code to <a href="http://reddit.com/r/elixirquiz">our subreddit</a>. As always, you can host your code anywhere (like <a href="https://gist.github.com/">Github Gists</a>), or post your solution directly into the subreddit post.</p>
-<h3>Example solutions</h3>
-<p>After the quiz period ends on October 17th, I will update this section and talk about some interesting solutions that were posted to <a href="http://reddit.com/r/elixirquiz">our subreddit</a></p>
 
 </div>
 

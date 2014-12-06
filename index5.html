@@ -36,6 +36,30 @@
           <div class="index">
   <h1>Problems</h1>
   <div id="post">
+  <h2><a href="2014-08-30-poker-part-1-a-deck-of-cards.html">Poker part 1: A deck of cards</a></h2>
+  <p>Welcome to the fourth installment of Elixir Quiz. This week, we embark on our first multi-week project, building a game of 5 card draw poker. This week we will be building the deck of cards.</p>
+<h3>An introduction to 5 card draw</h3>
+<p><a href="http://en.wikipedia.org/wiki/Five-card_draw">5 card draw</a> is one of the simplest variations of poker. It is the game that is most likely to have been played in people’s homes up until the rise in popularity of <a href="http://en.wikipedia.org/wiki/Texas_hold_'em">Texas Hold’em</a>.</p>
+<p>The game begins with each player being dealt 5 cards face down. After each player is dealt their cards, they then assess their initial hands. Players take turns discarding any of their cards and receiving replacements.</p>
+<p>Players then compare their hands against one another to determine the winning hand.</p>
+<p>For our first step, we will build ourselves a <a href="http://en.wikipedia.org/wiki/Standard_52-card_deck">deck of cards</a>.</p>
+<p>If you haven’t explored testing with <a href="http://elixir-lang.org/docs/stable/ex_unit/ExUnit.html">ExUnit</a> yet, the poker project provides a great opportunity to start.</p>
+<h3>The problem</h3>
+<blockquote><p>Create a module that will allow us to create a shuffled deck of cards. The deck should contain the 52 cards included in a regular deck. How the cards and deck are represented are completely up to you.</p>
+</blockquote>
+<blockquote><p>Since we’re working with the cards this week, also ensure that you have a function to compare the value of 2 individual cards. Card values, in high -&gt; low order, are <code class="inline">Ace, King, Queen, Jack, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1</code></p>
+</blockquote>
+<h3>How do I enter?</h3>
+<p>The Poker part 1 quiz runs from Saturday August 30th 2014 until Friday September 5th, 2014.</p>
+<p>To enter, just complete the problem and post the code to <a href="http://reddit.com/r/elixirquiz">our subreddit</a>. I’d suggest this week storing your project in a source control system, as we’ll be working on this for a few weeks.</p>
+<p><a href="https://github.com">GitHub</a> can be useful for hosting your solutions, but anywhere is fine.</p>
+<h3>Example solutions</h3>
+<p>After the quiz period ends on September 5th, I will update this section and talk about some interesting solutions that were posted to <a href="http://reddit.com/r/elixirquiz">our subreddit</a></p>
+
+</div>
+
+<hr class="post-base" />
+<div id="post">
   <h2><a href="2014-08-23-heightmap.html">Heightmap</a></h2>
   <p>Welcome to the third installment of Elixir Quiz. This week we will be creating heightmaps.</p>
 <h3>About Heightmaps</h3>
@@ -85,80 +109,6 @@
 </div>
 
 <hr class="post-base" />
-<div id="post">
-  <h2><a href="2014-08-11-fizzbuzz.html">FizzBuzz</a></h2>
-  <p>Welcome to the first ever Elixir Quiz problem. This week we will be tackling the classic interview question, FizzBuzz.</p>
-<h3>About FizzBuzz</h3>
-<p>I first heard about this problem several years ago while reading <a href="http://blog.codinghorror.com/why-cant-programmers-program/">a blog post on Coding Horror</a>. Since then I, <a href="http://en.wikipedia.org/wiki/Fizz_buzz#Other_uses">as well as many other programmers I am sure</a>, have used the problem to start learning new languages, as code kata, and as interview questions.</p>
-<p>The problem is often chosen as an interview question as it is quite simple to implement, either as hand written psudocode or executable code. This makes it a good choice to filter out candidates who have little to no programming experience.</p>
-<p>Since some of us will be using <a href="http://elixirquiz.github.io">Elixir Quiz</a> to take our first steps into the <a href="http://elixir-lang.org">Elixir</a> language, it makes sense to start with something simple and well understood.</p>
-<h3>The problem</h3>
-<p>The FizzBuzz problem is fairly straight forward.</p>
-<blockquote><p>Print the numbers from 1 to 100, replacing multiples of 3 with the word Fizz and multiples of 5 with the word Buzz. For numbers that are divisible by 3 and 5, replace the number with the word FizzBuzz.</p>
-</blockquote>
-<p>So for example, 1 to 15 would look like:</p>
-<blockquote><p>1 2 Fizz 4 Buzz Fizz 7 8 Fizz Buzz 11 Fizz 13 14 FizzBuzz</p>
-</blockquote>
-<h3>How do I enter?</h3>
-<p>The FizzBuzz quiz runs from Saturday August 9th 2014 until Friday August 15th, 2014.</p>
-<p>To enter, just complete the problem and post the code to <a href="http://reddit.com/r/elixirquiz">our subreddit</a>. For short solutions, you can put the code directly into your comment in the quiz thread.</p>
-<p>For larger solutions, please host your code elsewhere and link to it.</p>
-<p><a href="https://gist.github.com">GitHub gists</a> can be useful for hosting your solutions, but anywhere is fine.</p>
-<h3>Example solutions</h3>
-<p>We got 3 solutions for this problem. </p>
-<ul>
-<li><a href="http://www.reddit.com/r/elixirquiz/comments/2d18d1/20140809_fizzbuzz/cjlj8q7">im_pragdave</a>
-</li>
-<li><a href="https://gist.github.com/behe/4dd260a65e81132a3d90">@jlind</a>
-</li>
-<li><a href="https://gist.github.com/BennyHallett/00ea5440efb7d35a4b18">@bennyhallett</a>
-</li>
-</ul>
-<p>Two of the solutions involved pattern matching; Defining a function with 4 separate guard clauses to determine what string should be returned when a number is divisible by 15, 5, 3, or none of those.</p>
-<pre><code>def transform(value) when rem(value, 15) == 0, do: &quot;FizzBuzz&quot;
-def transform(value) when rem(value, 3) == 0, do: &quot;Fizz&quot;
-def transform(value) when rem(value, 5) == 0, do: &quot;Buzz&quot;
-def transform(value), do: value</code></pre>
-<p>With the <code class="inline">transform/1</code> function defined, both solutions took a range of numbers and mapped it to this function.</p>
-<pre><code>def up_to(n) do
-  1..n
-  |&gt; Enum.to_list
-  |&gt; Enum.map(&amp;transform/1)
-  |&gt; Enum.join &quot; &quot;
-end</code></pre>
-<p>The other solution took a different approach, using two cycling Streams, zipping them, and transforming the result into the correct value using <code class="inline">Stream.with_index/1</code>.</p>
-<pre><code>defmodule FizzBuzz do
-
-  @doc &quot;&quot;&quot;
-  Print the FizzBuzz sequence from 1 to `n`
-
-  ## Example
-
-      iex&gt; FixxBuzz.up_to 20
-      1 2 Fizz 4 Buzz Fizz 7 8 Fizz Buzz 11 Fizz 13 14 Fizz Buzz 16 17 Fizz 19 Buzz
-  &quot;&quot;&quot;
-
-  def up_to(n) do
-    fizzbuzz_stream |&gt; Enum.take(n) |&gt; Enum.join |&gt; IO.puts
-  end
-
-  @doc &quot;&quot;&quot;
-  Return a stream of FizzBuzz values
-  &quot;&quot;&quot;
-  def fizzbuzz_stream do
-    threes = Stream.cycle [ nil, nil, &quot;Fizz &quot; ]
-    fives  = Stream.cycle [ nil, nil, nil, nil, &quot;Buzz &quot; ]
-    Stream.zip(threes, fives) |&gt; Stream.with_index |&gt; Stream.map(&amp;speak/1)
-  end
-
-  defp speak({{nil,  nil},  n}), do: &quot;#{n+1} &quot;
-  defp speak({{fizz, buzz}, _}), do: &quot;#{fizz}#{buzz}&quot;
-
-end</code></pre>
-
-</div>
-
-<hr class="post-base" />
 
   <div class="row">
     <div class="index-nav">
@@ -167,7 +117,7 @@ end</code></pre>
       </div>
       <div class="four columns">&nbsp;</div>
       <div class="four columns omega pull-right">
-         &nbsp;
+        <a href="index6.html">Next Page</a> &nbsp;
       </div>
     </div>
   </div>
