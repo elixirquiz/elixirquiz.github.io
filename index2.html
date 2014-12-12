@@ -36,6 +36,27 @@
           <div class="index">
   <h1>Problems</h1>
   <div id="post">
+  <h2><a href="2014-11-22-tic-tac-toe-part-1-the-game.html">Tic Tac Toe part 1: The Game</a></h2>
+  <p>Welcome to the fourteenth edition of Elixir Quiz. This week we will be starting another multi-week project in which we create a multi player game of <a href="http://en.wikipedia.org/wiki/Tic-tac-toe">Tic Tac Toe</a>.</p>
+<p>In previous weeks we built our first multi-week project, where we <a href="http://elixirquiz.github.io/2014-08-30-poker-part-1-a-deck-of-cards.html">completed</a> <a href="http://elixirquiz.github.io/2014-09-06-poker-part-2-finding-a-winner.html">the</a> <a href="http://elixirquiz.github.io/2014-09-13-poker-part-3-making-decisions.html">poker</a> <a href="http://elixirquiz.github.io/2014-09-20-poker-part-4-playing-a-game.html">game</a>. The point of the poker game was to learn more about pattern matching. This time we’re building a much simpler game, so that we can focus on the multi-user party of the application, and learn more about <a href="http://learnyousomeerlang.com/what-is-otp">OTP</a>.</p>
+<h3>Tic Tac Toe</h3>
+<p><a href="http://en.wikipedia.org/wiki/Tic-tac-toe">Tic Tac Toe</a> is a traditional pen and paper game played by 2 players.</p>
+<p>The game takes place on a 3x3 grid, with players taking turns placing their token (either an X or a O) in an available square. A winner is determined when one player places 3 tokens in a row, either vertically, horizontally or diagonally. A draw is declared if all 9 squares are populated with tokens without a line of 3 existing for either player.</p>
+<h3>The problem</h3>
+<blockquote><p>Create a project that allows a person to play a game of Tic Tac Toe against a computer player. The AI doesn’t need to be sophisticated, and can be as simple as choosing random squares to place it’s token.</p>
+</blockquote>
+<p>Remember that we’re planning on expanding this into a larger, multi-user system. We will eventually want to have many different games running simultaneously, so having a game run as a process, with connected processes for each player may be a good idea.</p>
+<p>For reference on how a multiplayer game can hang together in an OTP application, check out Martin Schurrer’s <a href="http://www.confreaks.com/videos/4131-elixirconf2014-otp-in-production-the-nitty-gritty-details-of-game-servers">talk at ElixirConf 2014.</a></p>
+<h3>How do I enter?</h3>
+<p>Part 1 of the Tic Tac Toe quiz runs from Saturday November 22nd 2014 until Friday November 28th, 2014.</p>
+<p>To enter, just complete the problem and post a link to the code on Twitter, and mention <a href="https://twitter.com/elixir_quiz">@elixir_quiz</a>. As always, you can host your code anywhere (like <a href="https://gist.github.com/">Github Gists</a>), or post your solution directly into the subreddit post.</p>
+<h3>Example solutions</h3>
+<p>After the quiz period ends on November 28th, I will update this section and talk about some interesting solutions that were posted on Twitter.</p>
+
+</div>
+
+<hr class="post-base" />
+<div id="post">
   <h2><a href="2014-11-01-game-of-life.html">Conway's Game of Life</a></h2>
   <p>Welcome to the thirteenth edition of Elixir Quiz. This week we will be creating the cellular automata, Conway’s Game of Life.</p>
 <h3>Conway's Game of Life</h3>
@@ -99,28 +120,6 @@
 <p>To enter, just complete the problem and post the code to <a href="http://reddit.com/r/elixirquiz">our subreddit</a>. As always, you can host your code anywhere (like <a href="https://gist.github.com/">Github Gists</a>), or post your solution directly into the subreddit post.</p>
 <h3>Example solutions</h3>
 <p>After the quiz period ends on October 31st, I will update this section and talk about some interesting solutions that were posted to <a href="http://reddit.com/r/elixirquiz">our subreddit</a></p>
-
-</div>
-
-<hr class="post-base" />
-<div id="post">
-  <h2><a href="2014-10-18-caesar-ciphers.html">Caesar Cipher</a></h2>
-  <p>Welcome to the eleventh edition of Elixir Quiz. This week we will be encrypting a piece of text using a simple Caesar Cipher.</p>
-<h3>What is a Caesar Cipher</h3>
-<p>The <a href="http://en.wikipedia.org/wiki/Caesar_cipher">Caesar Cipher</a> is one of the simplest encryption methods.</p>
-<p>It is named after the famous <a href="http://en.wikipedia.org/wiki/Julius_Caesar">Roman general and statesman Julius Caesar</a>. Caesar used the technique in his reign as Roman general, in which he used a cipher with a left-shift of 3 to hide the contents of his military messages.</p>
-<p>Another famous Caesar Cipher is known as <a href="http://en.wikipedia.org/wiki/ROT13">ROT13</a>, in which the text is shifted by 13 characters. This was popular in the early days of the internet, to hide spoilers on <a href="http://en.wikipedia.org/wiki/Usenet">Usenet</a> forums.</p>
-<p>The cipher is extremely insecure, as it is susceptible to <a href="http://en.wikipedia.org/wiki/Frequency_analysis">frequency analysis</a> attacks.</p>
-<h3>The problem</h3>
-<blockquote><p>Create a function that takes a piece of plain text (either in a string, or as a path to a file), as well as a number, and performs a shift of that many places on the text.</p>
-</blockquote>
-<blockquote><p>As a stretch goal, see if you can reduce the time taken to encrypt large pieces of text by encrypting sections of it in parallel.</p>
-</blockquote>
-<h3>How do I enter?</h3>
-<p>The Caesar Cipher quiz runs from Saturday October 18th 2014 until Friday October 24th, 2014.</p>
-<p>To enter, just complete the problem and post the code to <a href="http://reddit.com/r/elixirquiz">our subreddit</a>. As always, you can host your code anywhere (like <a href="https://gist.github.com/">Github Gists</a>), or post your solution directly into the subreddit post.</p>
-<h3>Example solutions</h3>
-<p>After the quiz period ends on October 24th, I will update this section and talk about some interesting solutions that were posted to <a href="http://reddit.com/r/elixirquiz">our subreddit</a></p>
 
 </div>
 

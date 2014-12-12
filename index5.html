@@ -36,6 +36,46 @@
           <div class="index">
   <h1>Problems</h1>
   <div id="post">
+  <h2><a href="2014-09-06-poker-part-2-finding-a-winner.html">Poker part 2: Finding a winner</a></h2>
+  <p>Welcome to the fifth installment of Elixir Quiz. This week, we continue with our <a href="http://en.wikipedia.org/wiki/Five-card_draw">5 card draw</a> poker game. We will be building hands from our deck, and then comparing those hands to determine a winner.</p>
+<h3>A player's hand</h3>
+<p>A players hand consists of 5 cards taken from the <a href="http://en.wikipedia.org/wiki/Standard_52-card_deck">standard deck of cards</a>. Cards are traditionally dealt to players in turn, one at a time, such that no player has 2 cards until each person has 1. Some house rules allow players to recieve their cards in batches of 2 or 3, until they have their allotment of 5.</p>
+<h3>What beat's what?</h3>
+<p>Unlike other casino games, poker is one in which players play against one another, rather than the house. We need to be able to compare a players hand to those of the other players to determine a winner.</p>
+<p>The value of a <a href="http://en.wikipedia.org/wiki/List_of_poker_hands">poker hands</a> hand is determined by the probability of that hand occurring. The hands from highest to lowest are:</p>
+<ul>
+<li><em>Straight Flush</em>: This hand occurs when a player has 5 cards of the same suit in sequence. Two flushes are compared based on the value of their highest card. An <code class="inline">Ace high</code> or <code class="inline">Royal</code> flush beats a <code class="inline">King high</code> flush.
+</li>
+<li><em>Four of a kind</em>: A hand that contains four cards of the same value, and one other card. When comparing two four of a kind hands together, the value of the 4 cards is used to determine the winner. A hand with 4 fives beats a hand with 4 twos.
+</li>
+<li><em>Full House</em>: A hand that contains three cards with one value, and two cards of another value. When comparing two full houses, the hand with the higher value three matching cards wins. For example, a hand with 3 tens and 2 threes beats one with 3 fives and 2 kings.
+</li>
+<li><em>Flush</em>: The flush occurs when all cards in the hand have the same suit, but the values are not in sequence. When two flushes are compared, the winner is determined as if they were high card hands (which we’ll see below).
+</li>
+<li><em>Straight</em>: This hand occurs when a player has 5 cards in sequence, but the suit is not the same across all cards. When two straights are compared, the hand with the highest card wins. Two straights with the same high card are considered equal. An Ace can be positioned either before the 2 or after the King in a straight.
+</li>
+<li><em>Three of a kind</em>: A hand that contains three cards of matching value, and two other cards with non-matching values. When comparing two three of a kind hands, the hand with the highest value triple cards wins. For example, three Kings beats three Jacks.
+</li>
+<li><em>Two Pair</em>: This hand occurs when a player has two cards of the same value, plus another two cards of the same value (but not matching the first pair), plus any other card. When comparing two of these types of hand, the player with the higest value pair will win. If both players have matching pairs, such as both having a pair of 2s and a pair of 4s, then the remaining card determines the winner.
+</li>
+<li><em>One Pair</em>: One pair occurs when a hand consists of two cards of matching value, plus three other cards whose value doesn’t match the value of any other card in the hand. When compairing pairs, the higer value pair wins. If two pairs have the same value paired cards, then the highest of the remaining cards determines the winner.
+</li>
+<li><em>High Card</em>: The high card hand, which is the lowest value hand, consists of 5 cards, each of different values, and containing at least 2 suits. When comparing these hands, the winner is determined by the hand with the highest value card. If both hands have the same value high card, then the second highest card is compared, and so on until all cards are compared.
+</li>
+</ul>
+<h3>The problem</h3>
+<blockquote><p>Given that we already have a deck of cards, write a function that can deal hands to a number of players, between 2 and 6. Also write a function that can take this list of hands and determine the winner.</p>
+</blockquote>
+<h3>How do I enter?</h3>
+<p>The Poker part 2 quiz runs from Saturday September 6th 2014 until Friday September 13th, 2014.</p>
+<p>To enter, just complete the problem and post the code to <a href="http://reddit.com/r/elixirquiz">our subreddit</a>. Add this code to the project that you started last week.</p>
+<h3>Example solutions</h3>
+<p>After the quiz period ends on September 13th, I will update this section and talk about some interesting solutions that were posted to <a href="http://reddit.com/r/elixirquiz">our subreddit</a></p>
+
+</div>
+
+<hr class="post-base" />
+<div id="post">
   <h2><a href="2014-08-30-poker-part-1-a-deck-of-cards.html">Poker part 1: A deck of cards</a></h2>
   <p>Welcome to the fourth installment of Elixir Quiz. This week, we embark on our first multi-week project, building a game of 5 card draw poker. This week we will be building the deck of cards.</p>
 <h3>An introduction to 5 card draw</h3>
@@ -79,32 +119,6 @@
 <p><a href="https://gist.github.com">GitHub gists</a> can be useful for hosting your solutions, but anywhere is fine.</p>
 <h3>Example solutions</h3>
 <p>After the quiz period ends on August 30th, I will update this section and talk about some interesting solutions that were posted to <a href="http://reddit.com/r/elixirquiz">our subreddit</a></p>
-
-</div>
-
-<hr class="post-base" />
-<div id="post">
-  <h2><a href="2014-08-16-run-length-encoding.html">Run Length Encoding</a></h2>
-  <p>Welcome to the second installment of Elixir Quiz. This week we will be tackling a data compression algorigthm, <a href="http://en.wikipedia.org/wiki/Run-length_encoding">Run Length Encoding</a>.</p>
-<h3>About Run Length Encoding</h3>
-<p>Run length encoding is a compression algorithm that takes runs of sequential items in a series of data points, replacing that run with a single instance of the data point and the number of elements in that run.</p>
-<p>This compression algorithm can be fairly efficient for some types of data. For example bitmap images can be greatly reduced by using this method, however it would be a poor choice for English language text, since it’s uncommon for a charater to be repeated more than twice. This would be extremely inefficient as most words would double in length, such as <code class="inline">horse</code>, which becomes <code class="inline">h1o1r1s1e1</code>.</p>
-<p>Historically, RLE has been used to encode bitmap images in Windows 3.x. It was not a commonly used format, however it was used as the format of the startup screen. The algorithm is also used by fax machines, since the data they send is largely whitespace with small amounts of text on the page.</p>
-<h3>The problem</h3>
-<p>Create a program that takes a single string as input, and returns the run length encoded value.</p>
-<blockquote><p>Given a string of uppercase characters in the range A-Z, replace runs of sequential characters with a single instance of that value preceded by the number of items in the run.</p>
-</blockquote>
-<p>For example, if would take the sequence <code class="inline">JJJTTWPPMMMMYYYYYYYYYVVVVVV</code> the output would look like:</p>
-<blockquote><p>3J2T1W2P4M9Y6V</p>
-</blockquote>
-<p>In this instance, we’ve compressed a 27 character string down to 14 characters</p>
-<h3>How do I enter?</h3>
-<p>The Run Length Encoding quiz runs from Saturday August 16th 2014 until Friday August 22nd, 2014.</p>
-<p>To enter, just complete the problem and post the code to <a href="http://reddit.com/r/elixirquiz">our subreddit</a>. For short solutions, you can put the code directly into your comment in the quiz thread.</p>
-<p>For larger solutions, please host your code elsewhere and link to it.</p>
-<p><a href="https://gist.github.com">GitHub gists</a> can be useful for hosting your solutions, but anywhere is fine.</p>
-<h3>Example solutions</h3>
-<p>After the quiz period ends on August 22nd, I will update this section and talk about some interesting solutions that were posted to <a href="http://reddit.com/r/elixirquiz">our subreddit</a></p>
 
 </div>
 

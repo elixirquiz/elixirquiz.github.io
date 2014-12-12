@@ -36,6 +36,32 @@
           <div class="index">
   <h1>Problems</h1>
   <div id="post">
+  <h2><a href="2014-08-16-run-length-encoding.html">Run Length Encoding</a></h2>
+  <p>Welcome to the second installment of Elixir Quiz. This week we will be tackling a data compression algorigthm, <a href="http://en.wikipedia.org/wiki/Run-length_encoding">Run Length Encoding</a>.</p>
+<h3>About Run Length Encoding</h3>
+<p>Run length encoding is a compression algorithm that takes runs of sequential items in a series of data points, replacing that run with a single instance of the data point and the number of elements in that run.</p>
+<p>This compression algorithm can be fairly efficient for some types of data. For example bitmap images can be greatly reduced by using this method, however it would be a poor choice for English language text, since it’s uncommon for a charater to be repeated more than twice. This would be extremely inefficient as most words would double in length, such as <code class="inline">horse</code>, which becomes <code class="inline">h1o1r1s1e1</code>.</p>
+<p>Historically, RLE has been used to encode bitmap images in Windows 3.x. It was not a commonly used format, however it was used as the format of the startup screen. The algorithm is also used by fax machines, since the data they send is largely whitespace with small amounts of text on the page.</p>
+<h3>The problem</h3>
+<p>Create a program that takes a single string as input, and returns the run length encoded value.</p>
+<blockquote><p>Given a string of uppercase characters in the range A-Z, replace runs of sequential characters with a single instance of that value preceded by the number of items in the run.</p>
+</blockquote>
+<p>For example, if would take the sequence <code class="inline">JJJTTWPPMMMMYYYYYYYYYVVVVVV</code> the output would look like:</p>
+<blockquote><p>3J2T1W2P4M9Y6V</p>
+</blockquote>
+<p>In this instance, we’ve compressed a 27 character string down to 14 characters</p>
+<h3>How do I enter?</h3>
+<p>The Run Length Encoding quiz runs from Saturday August 16th 2014 until Friday August 22nd, 2014.</p>
+<p>To enter, just complete the problem and post the code to <a href="http://reddit.com/r/elixirquiz">our subreddit</a>. For short solutions, you can put the code directly into your comment in the quiz thread.</p>
+<p>For larger solutions, please host your code elsewhere and link to it.</p>
+<p><a href="https://gist.github.com">GitHub gists</a> can be useful for hosting your solutions, but anywhere is fine.</p>
+<h3>Example solutions</h3>
+<p>After the quiz period ends on August 22nd, I will update this section and talk about some interesting solutions that were posted to <a href="http://reddit.com/r/elixirquiz">our subreddit</a></p>
+
+</div>
+
+<hr class="post-base" />
+<div id="post">
   <h2><a href="2014-08-11-fizzbuzz.html">FizzBuzz</a></h2>
   <p>Welcome to the first ever Elixir Quiz problem. This week we will be tackling the classic interview question, FizzBuzz.</p>
 <h3>About FizzBuzz</h3>

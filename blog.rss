@@ -4,8 +4,15 @@
   <title>Elixir Quiz</title>
   <link>http://elixirquiz.github.io</link>
   <description>Weekly programming problems to help you learn Elixir</description>
-  <lastBuildDate>2014-12-06 20:27:17</lastBuildDate>
+  <lastBuildDate>2014-12-12 22:04:12</lastBuildDate>
   <language>en-us</language>
+<item>
+  <title>2048 Game</title>
+  <description>[CDATA[ In this edition of Elixir Quiz, we will be creating a version of the game, 2048 ]]</description>
+  <pubDate>2014-12-13</pubDate>
+  <link>http://elixirquiz.github.io/2014-12-13-2048-game.html</link>
+  <guid>http://elixirquiz.github.io/2014-12-13-2048-game.html</guid>
+</item>
 <item>
   <title>Tic Tac Toe part 3: Multiplayer</title>
   <description>[CDATA[ In this edition of Elixir Quiz, we will be finishing our game of Tic Tac Toe, this week allowing many players to join and play games ]]</description>

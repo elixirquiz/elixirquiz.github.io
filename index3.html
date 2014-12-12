@@ -36,6 +36,28 @@
           <div class="index">
   <h1>Problems</h1>
   <div id="post">
+  <h2><a href="2014-10-18-caesar-ciphers.html">Caesar Cipher</a></h2>
+  <p>Welcome to the eleventh edition of Elixir Quiz. This week we will be encrypting a piece of text using a simple Caesar Cipher.</p>
+<h3>What is a Caesar Cipher</h3>
+<p>The <a href="http://en.wikipedia.org/wiki/Caesar_cipher">Caesar Cipher</a> is one of the simplest encryption methods.</p>
+<p>It is named after the famous <a href="http://en.wikipedia.org/wiki/Julius_Caesar">Roman general and statesman Julius Caesar</a>. Caesar used the technique in his reign as Roman general, in which he used a cipher with a left-shift of 3 to hide the contents of his military messages.</p>
+<p>Another famous Caesar Cipher is known as <a href="http://en.wikipedia.org/wiki/ROT13">ROT13</a>, in which the text is shifted by 13 characters. This was popular in the early days of the internet, to hide spoilers on <a href="http://en.wikipedia.org/wiki/Usenet">Usenet</a> forums.</p>
+<p>The cipher is extremely insecure, as it is susceptible to <a href="http://en.wikipedia.org/wiki/Frequency_analysis">frequency analysis</a> attacks.</p>
+<h3>The problem</h3>
+<blockquote><p>Create a function that takes a piece of plain text (either in a string, or as a path to a file), as well as a number, and performs a shift of that many places on the text.</p>
+</blockquote>
+<blockquote><p>As a stretch goal, see if you can reduce the time taken to encrypt large pieces of text by encrypting sections of it in parallel.</p>
+</blockquote>
+<h3>How do I enter?</h3>
+<p>The Caesar Cipher quiz runs from Saturday October 18th 2014 until Friday October 24th, 2014.</p>
+<p>To enter, just complete the problem and post the code to <a href="http://reddit.com/r/elixirquiz">our subreddit</a>. As always, you can host your code anywhere (like <a href="https://gist.github.com/">Github Gists</a>), or post your solution directly into the subreddit post.</p>
+<h3>Example solutions</h3>
+<p>After the quiz period ends on October 24th, I will update this section and talk about some interesting solutions that were posted to <a href="http://reddit.com/r/elixirquiz">our subreddit</a></p>
+
+</div>
+
+<hr class="post-base" />
+<div id="post">
   <h2><a href="2014-10-11-identicons.html">Identicons</a></h2>
   <p>Welcome to the tenth edition of Elixir Quiz. This week we are creating a module to generate <a href="http://en.wikipedia.org/wiki/Identicon">Identicons</a> from a given username.</p>
 <h3>What is an Identicon</h3>
@@ -75,35 +97,6 @@
 <p>To enter, just complete the problem and post the code to <a href="http://reddit.com/r/elixirquiz">our subreddit</a>. As always, you can host your code anywhere (like <a href="https://gist.github.com/">Github Gists</a>), or post your solution directly into the subreddit post.</p>
 <h3>Example solutions</h3>
 <p>After the quiz period ends on October 10th, I will update this section and talk about some interesting solutions that were posted to <a href="http://reddit.com/r/elixirquiz">our subreddit</a></p>
-
-</div>
-
-<hr class="post-base" />
-<div id="post">
-  <h2><a href="2014-09-27-chat-server.html">Chat server</a></h2>
-  <p>Welcome to the eighth edition of Elixir Quiz. After wrapping up our first multi-week project, we get back to our smaller projects and build a simple chat server.</p>
-<h3>Chat servers</h3>
-<p>Getting online and talking with other people has been a staple of the internet since it’s beginning, with many of the early participants making use of <a href="http://en.wikipedia.org/wiki/Bulletin_board_system">Bulletin Board Systems (BBS)</a>. In 1988, <a href="http://en.wikipedia.org/wiki/Internet_Relay_Chat">Internet Relay Chat (IRC)</a> was created as an open protocol for real time group communication.</p>
-<p>We won’t be implementing the IRC protocol (unless you want to go the extra mile), but a simple protocol in which users can connect to a server and send messages that everyone else connected will also see. </p>
-<h3>The problem</h3>
-<blockquote><p>Create a chat server that clients can connect to, sending and receiving messages from other connected clients. Each client should supply a username, with the only restriction that the username be unique.</p>
-</blockquote>
-<blockquote><p>Users should be able to send messages that are received by all other users, and receive messages sent by all other users.</p>
-</blockquote>
-<blockquote><p>As a stretch goal, see if you can implement rooms, allowing users to join and leave them, and send messages only to users in that room.</p>
-</blockquote>
-<p>There are several methods that you could use to achieve this:</p>
-<ul>
-<li>The <a href="https://github.com/phoenixframework/phoenix">Phoenix framework</a> allows developers to use the <a href="http://en.wikipedia.org/wiki/WebSocket">Web Socket</a> protocol to achieve <a href="http://en.wikipedia.org/wiki/Full-duplex">full duplex communications</a>.
-</li>
-<li><a href="http://www.erlang.org/">Erlang’s</a> <code class="inline">:gen_tcp</code> module can be used for <a href="http://en.wikipedia.org/wiki/Transmission_Control_Protocol">TCP</a> communication. There is also an <a href="http://elixirsips.com/episodes/031_tcp_servers.html">Elixir Sips</a> episode on building TCP servers.
-</li>
-</ul>
-<h3>How do I enter?</h3>
-<p>The chat server quiz runs from Saturday September 27th 2014 until Friday October 3rd, 2014.</p>
-<p>To enter, just complete the problem and post the code to <a href="http://reddit.com/r/elixirquiz">our subreddit</a>. As always, you can host your code anywhere (like <a href="https://gist.github.com/">Github Gists</a>), or post your solution directly into the subreddit post.</p>
-<h3>Example solutions</h3>
-<p>After the quiz period ends on October 3rd, I will update this section and talk about some interesting solutions that were posted to <a href="http://reddit.com/r/elixirquiz">our subreddit</a></p>
 
 </div>
 

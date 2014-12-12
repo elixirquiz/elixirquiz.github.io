@@ -33,9 +33,7 @@
     <div class="main">
       <div class="container">
         <div class="twelve columns alpha content">
-          <div class="index">
-  <h1>Problems</h1>
-  <div id="post">
+          <div id="post">
   <h2><a href="2014-12-13-2048-game.html">2048 Game</a></h2>
   <p>Welcome to the seventeenth edition of Elixir Quiz. This week we will be
 creating our own version of the game, 2048.</p>
@@ -62,82 +60,6 @@ build a web application if you’re feeling ambitious.</p>
 <h3>Example solutions</h3>
 <p>After the quiz period ends on December 19th, I will update this section and talk about some interesting solutions that were posted on Twitter.</p>
 
-</div>
-
-<hr class="post-base" />
-<div id="post">
-  <h2><a href="2014-12-06-tic-tac-toe-part-3-multiplayer.html">Tic Tac Toe part 3: Multiplayer</a></h2>
-  <p>Welcome to the sixteenth edition of Elixir Quiz. This week we will be
-finialising our multiplayer tic tac toe game.</p>
-<p>Last week we built made it possible for our application to handle multiple games
-at once. This week we’ll extend that to allow many human players to play.</p>
-<h3>Communication</h3>
-<p>There are several ways that we can build our networking system.</p>
-<p>We could build <a href="http://elixir-lang.org/getting_started/mix_otp/8.html">a TCP
-server</a> or use <a href="https://github.com/phoenixframework/phoenix">Phoenix
-websockets</a></p>
-<p>Taking ideas from the <a href="http://www.confreaks.com/videos/4131-elixirconf2014-otp-in-production-the-nitty-gritty-details-of-game-servers">talk on game servers at ElixirConf 2014</a>, it may be a good idea to have your networking code in a separate OTP application to the game code.</p>
-<h3>The problem</h3>
-<blockquote><p>Continuing on from last week, create a networking system that will allow
-multiple human players to connect to and play your game at once.</p>
-</blockquote>
-<h3>How do I enter?</h3>
-<p>Part 3 of the Tic Tac Toe quiz runs from Saturday December 6th 2014 until Friday December 12th, 2014.</p>
-<p>To enter, just complete the problem and post a link to the code on Twitter, and mention <a href="https://twitter.com/elixir_quiz">@elixir_quiz</a>. As always, you can host your code anywhere (like <a href="https://gist.github.com/">Github Gists</a>), or post your solution directly into the subreddit post.</p>
-<h3>Example solutions</h3>
-<p>After the quiz period ends on December 12th, I will update this section and talk about some interesting solutions that were posted on Twitter.</p>
-
-</div>
-
-<hr class="post-base" />
-<div id="post">
-  <h2><a href="2014-11-29-tic-tac-toe-part-2-the-application.html">Tic Tac Toe part 2: The Application</a></h2>
-  <p>Welcome to the fifteenth edition of Elixir Quiz. This week we will be
-continuing our multi-week Tic Tac Toe project.</p>
-<p>Last week we built a game that could be played by a human and a computer player.
-This week we will be continuing that game, and making it possible for a game
-server to manage several games at once.</p>
-<h3>Supervision Trees</h3>
-<p>The official <a href="http://www.erlang.org/doc/man/supervisor.html">Erlang
-documentation</a> describes
-supervisors as:</p>
-<blockquote><p>a process which supervises other processes called child processes. A child
-process can either be another supervisor or a worker process.</p>
-</blockquote>
-<blockquote><p>Supervisors are used to build an hierarchical process structure called a
-supervision tree, a nice way to structure a fault tolerant application.</p>
-</blockquote>
-<p>For more information, see the <a href="http://www.erlang.org/doc/design_principles/des_princ.html">OTP design
-principles</a>
-document.</p>
-<h3>The problem</h3>
-<blockquote><p>Create an OTP application that manages several games of tic-tac-toe. The games
-should be monitored by a supervisor, and recover if they crash for any reason.</p>
-</blockquote>
-<p>Next week we’ll create an interface for the game so that people can connect to
-it and play against other people.</p>
-<p>Like last week, a good reference on how a multiplayer game can hang together in an OTP application, check out Martin Schurrer’s <a href="http://www.confreaks.com/videos/4131-elixirconf2014-otp-in-production-the-nitty-gritty-details-of-game-servers">talk at ElixirConf 2014.</a></p>
-<h3>How do I enter?</h3>
-<p>Part 2 of the Tic Tac Toe quiz runs from Saturday November 29th 2014 until Friday December 5th, 2014.</p>
-<p>To enter, just complete the problem and post a link to the code on Twitter, and mention <a href="https://twitter.com/elixir_quiz">@elixir_quiz</a>. As always, you can host your code anywhere (like <a href="https://gist.github.com/">Github Gists</a>), or post your solution directly into the subreddit post.</p>
-<h3>Example solutions</h3>
-<p>After the quiz period ends on December 5th, I will update this section and talk about some interesting solutions that were posted on Twitter.</p>
-
-</div>
-
-<hr class="post-base" />
-
-  <div class="row">
-    <div class="index-nav">
-      <div class="four columns alpha">
-         &nbsp;
-      </div>
-      <div class="four columns">&nbsp;</div>
-      <div class="four columns omega pull-right">
-        <a href="index2.html">Next Page</a> &nbsp;
-      </div>
-    </div>
-  </div>
 </div>
 
         </div>
